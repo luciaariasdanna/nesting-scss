@@ -1,0 +1,42 @@
+$color-bg-card: #ffffff;
+$color-bg-highlighted: #fff3cd;
+$color-text-title: #212529;
+$color-text-content: #6c757d;
+$color-button: #0d6efd;
+$color-button-text: #ffffff;
+
+$card-padding: 1.5rem;
+$card-border-radius: 8px;
+$card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+.card {
+    background-color: $color-bg-card;
+    padding: $card-padding;
+    border-radius: $card-border-radius;
+    box-shadow: $card-shadow;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__title {
+        font-size: 1.5rem;
+        color: $color-text-title;
+    }
+
+    &__content {
+        font-size: 1rem;
+        color: $color-text-content;
+    }
+
+    &__button {
+        background-color: $color-button;
+        color: $color-button-text;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 4px;
+    }
+
+    &__highlighted {
+        background-color: $color-bg-highlighted;
+    }
+}
